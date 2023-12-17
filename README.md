@@ -14,6 +14,8 @@ oracle_text
 colors
 color_identity
 keywords
+legalities
+prices.usd
 
 ## Shorthand (Derived from Scryfall Syntax)
 ### Colors:
