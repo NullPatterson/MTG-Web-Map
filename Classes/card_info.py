@@ -5,9 +5,11 @@ File Name: card_info.py
 Purpose: Define a Card Class to store all the info about a particular card
 """
 
+from typing import *
+
 class Card:
-    def __init__(self, name, lang, mana_cost, cmc, type_line, oracle_text, 
-                 colors, color_identity, keywords, legalities, price):
+    def __init__(self, name: str, lang: str, mana_cost: str, cmc: int, type_line: str, oracle_text: str, 
+                 colors: str, color_identity: List[str], keywords: List[str], legalities: List[List[str], List[str]], price: int):
         self.__name__ = name
         self.__lang__ = lang
         self.__mana_cost__ = mana_cost
