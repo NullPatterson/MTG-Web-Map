@@ -1,6 +1,6 @@
 """
 Author: Nol Patterson
-Date: 12/16/2023
+Date: 1/3/2024
 File Name: deck_list.py
 Purpose: Store a list of cards used in a deck
 """
