@@ -8,7 +8,7 @@ Purpose: Define a Card Class to store all the info about a particular card
 from typing import *
 
 class Card:
-    def __init__(self, name: str, lang: str, mana_cost: str, cmc: int, type_line: str, oracle_text: str, 
+    def __init__(self, name: str, lang: str, mana_cost: str, cmc: int, type_line: str, oracle_text: str, uid: str, 
                  colors: str, color_identity: List[str], keywords: List[str], legalities: List[List[str], List[str]], price: int):
         self.__name__ = name
         self.__lang__ = lang
@@ -16,11 +16,13 @@ class Card:
         self.__cmc__ = cmc
         self.__type_line__ = type_line
         self.__oracle__ = oracle_text
+        self.__uid__ = uid
         self.__colors__ = colors
         self.__color_identity__ = color_identity
         self.__keywords__ = keywords
         self.__legalities__ = legalities
         self.__price__ = price   
+        
     
     # Getters
     @property
@@ -46,6 +48,10 @@ class Card:
     @property
     def oracle(self):
         return self.__oracle__
+    
+    @property
+    def uid(self):
+        return self.__uid__
     
     @property
     def colors(self):
