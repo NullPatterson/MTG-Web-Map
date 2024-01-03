@@ -2,3 +2,4 @@ A general list of things for me to look into as I work on this, and another plac
 
 - Generate a list of keywords scryfall stores and see if there are any I think should be added
 - Learn to create networking map and find ways to visualize the weight of edges and increase the size of nodes bsed off the number of edges currently pointing to it.
+- Creat vector embeddings and map it to create suggestions of cards with similar style effects
