@@ -74,11 +74,17 @@ class Deck:
     
     # Setter to only add one cards
     @cards.setter
-    def cards(self, card: Card):
-        self.__cards__.append(card)
+    def cards(self, addCard: bool, card: Card):
+        #if addCard is True increase the deck price, and if False decrease price
+        if addCard: self.__cards__.append(card)
+        else: self.__cards__.remove(card)
+        self.price(addCard, card)
     
     # Overwride function 
     @cards.setter
-    def cards(self, cards: List[Card]):
+    def cards(self, addCard: bool, cards: List[Card]):
+        #if addCard is True increase the deck price, and if False decrease price
         for card in cards:
-            self.__cards__.append(card)
+            if addCard: self.__cards__.append(card)
+            else: self.__cards__.remove(card)
+            self.price(addCard, card)
